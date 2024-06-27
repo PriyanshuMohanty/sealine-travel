@@ -1,0 +1,362 @@
+/* *{
+    border: 2px solid;
+} */
+
+/* HEAD  */
+
+.navbar {
+    display: none;
+}
+
+#check:checked~.navbar {
+    display: block;
+
+}
+
+#bars {
+    display: block;
+}
+
+#check:checked~label #bars {
+    display: none;
+}
+
+#check:checked~label #cross {
+    display: block;
+}
+
+.navbar {
+    position: absolute;
+    top: 79px;
+    left: 0;
+    width: max-content;
+
+
+}
+
+.btntab {
+    display: none;
+}
+
+.navbar ul {
+    flex-direction: column;
+    background-color: white;
+    height: 100vh;
+
+}
+
+.navbar li a {
+    display: block;
+    padding: 12px 12px;
+    margin: 0;
+    margin-top: 10px;
+    padding-right: 140px;
+}
+
+.navbar li a:hover {
+    color: white;
+    background-color: rgba(0, 0, 255, 0.693);
+}
+
+/* MENU  */
+.dropdown {
+    left: 220px;
+    top: 0;
+}
+
+.dropdown ul {
+    margin-left: 50px;
+}
+
+.dropdown ul li:hover {
+    color: orange;
+}
+
+
+.navbar>header>ul>li {
+    position: relative;
+}
+
+
+/* .section   */
+
+.flex {
+    flex-direction: column;
+}
+
+#section::before {
+    height: 900px;
+}
+
+
+.sec {
+    min-width: 70vw;
+    max-width: 80vw;
+    text-align: center;
+    align-items: center;
+
+}
+
+.sec2 {
+    margin-left: 0;
+    margin-top: 80px;
+}
+
+#section {
+    height: 900px;
+}
+
+@media only screen and (max-width:640px) {
+    #section {
+        height: 950px;
+    }
+
+    #section::before {
+        height: 950px;
+    }
+    @media only screen and (max-width:370px) {
+        #section {
+            height: 1060px;
+        }
+    
+        #section::before {
+            height: 1060px;
+        }
+    }
+
+}
+
+
+
+.gap1 select {
+    width: 60vw;
+}
+
+.gap input {
+    width: 60vw;
+
+}
+
+.gap3 input {
+    width: 28vw;
+}
+
+.gap4 select {
+    width: 28vw;
+}
+
+/* SECAND ROW  */
+
+.secondrow {
+    flex-direction: column;
+
+}
+
+.backH {
+    padding: 15px;
+    width: 100vw;
+    letter-spacing: 8px;
+    font-size: 70px;
+
+}
+
+.front {
+    left: 110px;
+    padding-top: 65px;
+}
+
+@media only screen and (max-width:730px){
+    .backH{
+        font-size: 60px;
+        text-align: center;
+    }
+    .front{
+        padding-top: 60px;
+    }
+
+    @media only screen and (max-width:645px){
+        .backH{
+            font-size: 50px;
+            /* text-align: center; */
+        }
+        .front{
+            padding-top: 50px;
+        }
+        .secondrowbtn button{
+            font-size: 15px;
+            padding: 12px 12px;
+        }
+        
+        @media only screen and (max-width:545px){
+            .backH{
+                font-size: 40px;
+                /* text-align: center; */
+            }
+            .front{
+                padding-top: 35px;
+                left: 80px;
+            }
+            
+            @media only screen and (max-width:455px){
+                .backH{
+                    font-size: 30px;
+                    /* text-align: center; */
+                }
+                .front{
+                    padding-top: 30px;
+                    /* left: 80px; */
+                    font-size: 30px;
+                    left: 60px;
+                }
+
+                @media only screen and (max-width:370px){
+                    .backH{
+                        font-size: 20px;
+                        /* text-align: center; */
+                    }
+                    .front{
+                        padding-top: 25px;
+                        /* left: 80px; */
+                        font-size: 25px;
+                        left: 40px;
+                    }
+                }
+
+            }
+
+        }
+
+
+
+
+    }
+
+
+}
+
+
+
+
+
+
+
+.secondrowbtn {
+    margin-top: 30px;
+}
+
+/* img  */
+
+
+.img1 div {
+    width: 45vw;
+}
+
+@media only screen and (max-width:650px) {
+    .img1 div {
+        width: 85vw;
+
+    }
+
+}
+
+/* SERVICES  */
+
+.services section>div {
+    flex-wrap: wrap;
+}
+
+.services section div div {
+    width: 45vw;
+}
+
+@media only screen and (max-width:610px) {
+    .services section div div {
+        width: 80vw;
+    }
+}
+
+/* NEWS  */
+@media only screen and (max-width:750px) {
+    .news {
+        flex-direction: column;
+    }
+
+    .images2 {
+        width: 85vw;
+    }
+
+    /* TOURS  */
+    .TOURS>div{
+        width: 50%;
+    }
+
+    /* MENU  */
+
+    .dropdown{
+        position: static;
+    }
+
+}
+
+
+/* TEST  */
+
+.test {
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+    width: 86vw;
+
+}
+
+.feedback {
+    margin-top: 40px;
+    margin-left: 0;
+    
+}
+
+.feedback div:nth-child(2) p{
+    font-size: 20px;
+}
+
+/* BOOK  */
+
+@media only screen and (max-width:1000px){
+
+    .book{
+        flex-direction: column;
+        text-align: center;
+
+    }
+    .bookbtn{
+        margin-top: 40px;
+    }
+
+    /* FOOTER  */
+
+    footer{
+        flex-direction: column;
+        justify-content: center;
+        height: 220px;
+        text-align: center;
+    }
+
+   footer>div{
+    margin: 10px 0;
+   }
+}
+
+@media only screen and (max-width:550px){
+
+        .book h2{
+            font-size: 28px;
+        }
+
+        .book p{
+            font-size: 16px;
+        }
+
+
+}
+
+

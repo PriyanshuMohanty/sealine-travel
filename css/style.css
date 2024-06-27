@@ -1,0 +1,644 @@
+/* css reset  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+
+/* HEAD  */
+#bars,
+#cross,
+#check {
+    font-size: 37px;
+    display: none;
+    width: 50px;
+    margin: 6px 15px;
+
+}
+
+
+
+
+#head {
+    display: flex;
+    padding: 15px 5px;
+    background-color: rgb(194, 184, 184);
+    height: 84px;
+    position: sticky;
+    top: 0;
+    z-index: 65;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    list-style: none;
+}
+
+.navbar li a {
+    text-decoration: none;
+    padding: 15px 15px;
+    margin: 15px 15px;
+}
+
+.navbar {
+    display: flex;
+    width: 75%;
+    justify-content: center;
+    align-items: center;
+}
+
+li a {
+    color: black;
+}
+
+.btn button {
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 20px 35px;
+    font: bold;
+    width: max-content;
+}
+
+
+/* section  */
+#section::before {
+    content: "";
+    background: url(/img/swiper-slide-1.jpg)no-repeat center center/cover;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    left: 0%;
+
+    height: 700px;
+}
+
+#section {
+    display: flex;
+    /* padding: 0px 100px; */
+    justify-content: center;
+    height: 700px;
+
+    align-items: center;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80vw;
+}
+
+
+
+
+.sec {
+    min-width: 380px;
+    max-width: 420px;
+    display: flex;
+    flex-direction: column;
+
+    color: white;
+}
+
+.sec h2 {
+    margin-bottom: 40px;
+
+    font-size: 38px;
+
+
+}
+
+.sec button {
+    padding: 12px 0px;
+    margin-top: 20px;
+    border-radius: 30px;
+    background-color: transparent;
+    width: 170px;
+    border: 2px solid white;
+    color: white;
+    font-weight: bold;
+}
+
+.sec2 {
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.838);
+    margin-left: 150px;
+    border-radius: 4px;
+    padding: 30px 20px;
+
+}
+
+/* form  */
+
+.gap1 select {
+
+    width: 400px;
+    padding: 15px 15px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    margin-top: 5px;
+    border: none;
+
+}
+
+
+.gap input {
+
+
+    width: 400px;
+    padding: 15px 15px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    margin-top: 5px;
+    border: none;
+
+
+
+
+}
+
+.gap4 select {
+    width: 190px;
+
+}
+
+.gap3 input {
+    width: 190px;
+
+}
+
+.gap2 {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+
+.gap7 input {
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+/* menu  */
+
+
+.dropdown {
+    display: none;
+    position: absolute;
+
+}
+
+.navbar ul li:hover .dropdown {
+    display: block;
+
+
+}
+
+.dropdown ul {
+    display: block;
+    margin-top: 35px;
+    background-color: aliceblue;
+}
+
+.dropdown ul li {
+    padding: 12px 12px;
+
+}
+
+
+
+/* SECONDROW */
+.secondrow {
+    display: flex;
+    align-items: center;
+    margin-top: 85px;
+    position: relative;
+}
+
+.front {
+    position: absolute;
+    left: 140px;
+    padding-top: 50px;
+    font-size: 35px;
+    /* z-index:-2 ; */
+
+}
+
+.backH {
+    font-size: 80px;
+    opacity: 0.1;
+    color: rgb(154, 154, 154);
+    width: 84vw;
+    letter-spacing: 12px;
+    padding-left: 35px;
+    /* z-index: -2; */
+}
+
+
+
+
+/* image  */
+.btn1 {
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 35px;
+    font: bold;
+    width: max-content;
+    position: absolute;
+    left: 163.05px;
+    top: 130px;
+    display: none;
+    /* z-index: -2; */
+}
+
+.img1 {
+    display: flex;
+    /* margin: ; */
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.img1 div {
+    /* margin: 40px 15px; */
+    /* height: 300px; */
+    position: relative;
+    /* z-index: -3; */
+    width: 31vw;
+    margin-top: 70px;
+}
+
+.img1 div img:hover+.btn1 {
+    display: block;
+
+}
+
+.img1 div div {
+    display: flex;
+    margin: 15px 0px;
+    justify-content: space-between;
+}
+
+.img1 div div p:nth-child(1) {
+    font-size: 20px;
+    /* width:360px ; */
+}
+
+.img1 div div p:nth-child(2) {
+
+    color: orange;
+    font-size: 20px;
+
+}
+
+/* services  */
+.services {
+    background-color: rgba(228, 227, 227, 0.326);
+    padding: 80px 0;
+    margin-top: 120px;
+}
+
+.services h2 {
+    text-align: center;
+    font-size: 35px;
+
+}
+
+.services section>div {
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+
+}
+
+.services section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services section i {
+    color: orange;
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+.services section div div {
+    border: 1px solid rgba(183, 182, 182, 0.83);
+    margin: 15px 15px;
+    width: 22vw;
+    padding: 40px 20px;
+    border-radius: 10px;
+
+}
+
+.services section div div:hover {
+    background-color: white;
+    box-shadow: 0 0 12px 6px rgba(183, 182, 182, 0.49);
+}
+
+.services section div div p {
+    border-top: 1px solid rgb(149, 148, 148);
+    padding: 25px 0;
+}
+
+.services section div div i {
+    color: orange;
+    font-size: 40px;
+}
+
+.services section div div h3 {
+    padding: 30px 0;
+}
+
+
+/* .news  */
+
+.news {
+    display: flex;
+    /* justify-content: space-evenly; */
+}
+
+.btn2 {
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 4px;
+    font: bold;
+    width: max-content;
+}
+
+.bt {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px;
+}
+
+.images2 {
+    margin: 20px 10px;
+    width: 45.5vw;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.images2:hover {
+    box-shadow: 0 0 12px 6px rgba(183, 182, 182, 0.49);
+}
+
+.para {
+    padding: 0 20px;
+    border-bottom: 1px solid rgb(149, 148, 148);
+    padding-bottom: 30px;
+
+}
+
+.bt div span:hover {
+    color: orange;
+}
+
+.latest {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.latest h2 {
+    padding-top: 80px;
+    font-size: 35px;
+
+
+}
+
+.latest>i {
+    font-size: 30px;
+    color: orange;
+    margin: 25px 0 60px 0;
+}
+
+.btn3 {
+    margin: 80px 0;
+
+}
+
+.btn3 button {
+    font-size: 20px;
+}
+
+/* test  */
+.test {
+    display: flex;
+
+    width: 70vw;
+    justify-content: center;
+}
+
+.test div img {
+    border-radius: 50%;
+}
+
+.singer {
+    min-width: 230px;
+    max-width: 250px;
+    /* height: 220px; */
+}
+
+.feedback {
+    margin-left: 50px;
+}
+
+
+.feedback div:nth-child(1) {
+    color: orange;
+    font-size: 100px;
+    line-height: 30PX;
+}
+
+.feedback div:nth-child(2) p {
+    font-size: 27px;
+
+}
+
+.feedback div:nth-child(3) {
+    margin: 45px 0px;
+}
+
+.feedback div:nth-child(3) h3 {
+    margin-bottom: 10px;
+    font-size: 25px;
+    color: rgba(58, 58, 204, 0.904);
+}
+
+.testimonials {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(228, 227, 227, 0.326);
+}
+
+.testimonials h2 {
+    padding-top: 100px;
+    font-size: 35px;
+}
+
+.testimonials i {
+    color: orange;
+    font-size: 30px;
+    margin: 25px 0 60px 0;
+}
+
+/* TOURS  */
+
+.TOURS {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+
+.TOURS>div {
+    width: 33.33%;
+    position: relative;
+}
+
+.TOURSH3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.107);
+    height: 99%;
+    width: 100%;
+    top: 0;
+    color: white;
+    /* display: none; */
+    
+}
+
+.TOURSDIV{
+    display: none;
+}
+
+.TOURS div img{
+    display: block;
+}
+
+
+.TOURS>div:hover .TOURSDIV{
+    display: block;
+}
+
+.TOURSH3 P{
+    width: 60%;
+    padding-top: 22px;
+}
+
+/* BOOK  */
+
+.book{
+    background-color: rgba(0, 0, 0, 0.812);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:100px 12px;
+    
+
+}
+
+.book h2{
+    color: orange;
+    font-size: 32px;
+    padding-bottom: 20px;
+}
+
+.book p{
+    color: white;
+    font-size: 23px;
+}
+
+.bookbtn button{
+    
+    background-color: rgba(19, 19, 19, 0);
+    border: 1px solid white;
+    padding: 12px 55px;
+}
+
+.bookbtn button:hover{
+    background-color: orange;
+    border: none;
+}
+
+/* FOOTER  */
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    height: 150px;
+    padding: 0 12px;
+
+}
+
+footer div p{
+    color: rgb(93, 91, 91);
+}
+
+.brands{
+    display: flex;
+   
+}
+
+.brands div i{
+    font-size: 20px;
+    color: white;
+    background-color: rgb(93, 91, 91) ;
+    padding: 12px;
+    border-radius: 50%;
+    
+}
+
+.brands div:nth-child(1) i:hover{
+    background-color: royalblue;
+}
+.brands div:nth-child(2) i:hover{
+    background-color: rgb(64, 184, 253);
+}
+.brands div:nth-child(3) i:hover{
+    background-color:rgb(248, 106, 129);
+}
+.brands div:nth-child(4) i:hover{
+    background-color:red;
+}
+
+.brands div:nth-child(5) i:hover{
+    background-color:rgb(5, 107, 242);
+}
+
+.brands div{
+    margin: 5px;
+    /* border-radius:50% ; */
+}
+
